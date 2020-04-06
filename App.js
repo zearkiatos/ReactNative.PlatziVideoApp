@@ -28,9 +28,13 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: Platform.select({
+      ios: 'green',
+      android: 'blue',
+    }),
   },
   welcome: {
     fontSize: 20,
@@ -42,4 +46,4 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-})
+});
