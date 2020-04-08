@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-const VerticalSeparator = (props) => {
+const VerticalSeparator = props => {
   return (
     <View
       style={[
@@ -8,9 +8,8 @@ const VerticalSeparator = (props) => {
         {
           borderTopColor: props.color ? props.color : '#eaeaea',
         },
-      ]}>
-      <Text>Esto es un separador</Text>
-    </View>
+      ]}
+    />
   );
 };
 
