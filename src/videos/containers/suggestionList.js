@@ -12,7 +12,6 @@ class SuggestionList extends Component {
     return <Suggestion {...item} />;
   };
   render() {
-    const list = [];
     return (
       <Layout title="Recomendado para ti">
         <FlatList
