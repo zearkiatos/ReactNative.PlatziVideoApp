@@ -4,18 +4,15 @@ const Suggestion = props => {
   return (
     <View style={styles.container}>
       <View style={styles.left}>
-        <Image
-          style={styles.cover}
-          source={require('../../../assets/logo.png')}
-        />
+        <Image style={styles.cover} source={{uri: props.medium_cover_image}} />
         <View style={styles.gender}>
-          <Text style={styles.genderText}>Acción</Text>
+          <Text style={styles.genderText}>{props.genres[0]}</Text>
         </View>
       </View>
       <View style={styles.right}>
-        <Text style={styles.title}>Avengers</Text>
-        <Text style={styles.year}>2007</Text>
-        <Text style={styles.raiting}>5 Estrellas</Text>
+        <Text style={styles.title}>{props.title}</Text>
+        <Text style={styles.year}>{props.year}</Text>
+        <Text style={styles.rating}>{props.rating} Estrellas</Text>
       </View>
     </View>
   );
@@ -59,7 +56,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     alignSelf: 'flex-start',
   },
-  raiting: {
+  rating: {
     color: '#6b6b6b',
     fontSize: 14,
     fontWeight: 'bold',
