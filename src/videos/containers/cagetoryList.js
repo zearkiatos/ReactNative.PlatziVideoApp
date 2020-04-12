@@ -3,14 +3,14 @@ import {FlatList} from 'react-native';
 import Layout from '../components/categoryListLayout';
 import Empty from '../components/empty';
 import Separator from '../../sections/components/horizontalSeparetor';
-import Suggestion from '../components/suggestion';
+import Category from '../../videos/components/category';
 
 class CategoryList extends Component {
   keyExtractor = item => item.id.toString();
   renderEmpty = () => <Empty text="No hay elementos sugeridos ☹" />;
   itemSeparator = () => <Separator />;
   renderItem = ({item}) => {
-    return <Suggestion {...item} />;
+    return <Category {...item} />;
   };
   render() {
     return (
