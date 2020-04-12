@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {FlatList, Text} from 'react-native';
+import {FlatList} from 'react-native';
 import Layout from '../components/suggestionListLayout';
 import Empty from '../components/empty';
 import Separator from '../components/verticalSeparator';
