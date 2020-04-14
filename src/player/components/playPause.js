@@ -6,6 +6,12 @@ import {
   StyleSheet,
   Text,
 } from 'react-native';
+import FontAwesome, {
+  SolidIcons,
+  RegularIcons,
+  BrandIcons,
+} from 'react-native-fontawesome';
+
 const PlayPause = props => {
   return (
     <TouchableHighlight
@@ -19,7 +25,8 @@ const PlayPause = props => {
         right: 5,
       }}>
       {props.paused ? (
-        <Text style={styles.button}>PLAY</Text>
+        // <Text style={styles.button}>PLAY</Text>
+        <FontAwesome icon={BrandIcons.playstation} />
       ) : (
         <Text style={styles.button}>PAUSE</Text>
       )}

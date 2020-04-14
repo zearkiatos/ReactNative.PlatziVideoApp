@@ -12,10 +12,17 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1B320A0BF1E7B451F158AC69 /* libPods-ReactNativePlatziVideoApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F62E1CB8578766739B04D3AB /* libPods-ReactNativePlatziVideoApp-tvOS.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReactNativePlatziVideoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativePlatziVideoAppTests.m */; };
+		7596DEAC2445666A003AAFD2 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7596DEA924456669003AAFD2 /* fa-regular-400.ttf */; };
+		7596DEAD2445666A003AAFD2 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7596DEAA2445666A003AAFD2 /* fa-solid-900.ttf */; };
+		7596DEAE2445666A003AAFD2 /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7596DEAB2445666A003AAFD2 /* fa-brands-400.ttf */; };
+		94FD16A1F76232EB476A4541 /* libPods-ReactNativePlatziVideoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFCAEDBF78ECA9BB8E7CF4B /* libPods-ReactNativePlatziVideoApp.a */; };
+		A887D647860F7935E8A56F96 /* libPods-ReactNativePlatziVideoApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A59924106593660D7AF87C /* libPods-ReactNativePlatziVideoApp-tvOSTests.a */; };
+		EA845785EBF7065635F1645C /* libPods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 849CFA85FA3252810E4AAEEE /* libPods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,7 @@
 		00E356EE1AD99517003FC87E /* ReactNativePlatziVideoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativePlatziVideoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ReactNativePlatziVideoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativePlatziVideoAppTests.m; sourceTree = "<group>"; };
+		00FA7F77E549E62169D87453 /* Pods-ReactNativePlatziVideoApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlatziVideoApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativePlatziVideoApp-tvOS/Pods-ReactNativePlatziVideoApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactNativePlatziVideoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativePlatziVideoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactNativePlatziVideoApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ReactNativePlatziVideoApp/AppDelegate.m; sourceTree = "<group>"; };
@@ -47,10 +55,24 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativePlatziVideoApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativePlatziVideoApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativePlatziVideoApp/main.m; sourceTree = "<group>"; };
+		1CE0E0BFF3CE47FC1B42E48D /* Pods-ReactNativePlatziVideoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlatziVideoApp.release.xcconfig"; path = "Target Support Files/Pods-ReactNativePlatziVideoApp/Pods-ReactNativePlatziVideoApp.release.xcconfig"; sourceTree = "<group>"; };
+		1EFCAEDBF78ECA9BB8E7CF4B /* libPods-ReactNativePlatziVideoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativePlatziVideoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25EA00C42A4A1FBD1D7CA1B4 /* Pods-ReactNativePlatziVideoApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlatziVideoApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNativePlatziVideoApp-tvOS/Pods-ReactNativePlatziVideoApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ReactNativePlatziVideoApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactNativePlatziVideoApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ReactNativePlatziVideoApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactNativePlatziVideoApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A59924106593660D7AF87C /* libPods-ReactNativePlatziVideoApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativePlatziVideoApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71F3625F786256BAD0566D7C /* Pods-ReactNativePlatziVideoApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlatziVideoApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativePlatziVideoApp-tvOSTests/Pods-ReactNativePlatziVideoApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7596DEA924456669003AAFD2 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-regular-400.ttf"; path = "../../../../../../Users/zearkiatos/Downloads/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.ttf"; sourceTree = "<group>"; };
+		7596DEAA2445666A003AAFD2 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-solid-900.ttf"; path = "../../../../../../Users/zearkiatos/Downloads/fontawesome-free-5.13.0-web/webfonts/fa-solid-900.ttf"; sourceTree = "<group>"; };
+		7596DEAB2445666A003AAFD2 /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-brands-400.ttf"; path = "../../../../../../Users/zearkiatos/Downloads/fontawesome-free-5.13.0-web/webfonts/fa-brands-400.ttf"; sourceTree = "<group>"; };
+		849CFA85FA3252810E4AAEEE /* libPods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE8A679E6B760F565A87532 /* Pods-ReactNativePlatziVideoApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlatziVideoApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativePlatziVideoApp-tvOSTests/Pods-ReactNativePlatziVideoApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA46F4583C3B68A27BBD29A3 /* Pods-ReactNativePlatziVideoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlatziVideoApp.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativePlatziVideoApp/Pods-ReactNativePlatziVideoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C02052E34B9D7EAC744C1955 /* Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests/Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		E8468BCAA6EDA5517F3F9A96 /* Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests/Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F62E1CB8578766739B04D3AB /* libPods-ReactNativePlatziVideoApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativePlatziVideoApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA845785EBF7065635F1645C /* libPods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FD16A1F76232EB476A4541 /* libPods-ReactNativePlatziVideoApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B320A0BF1E7B451F158AC69 /* libPods-ReactNativePlatziVideoApp-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A887D647860F7935E8A56F96 /* libPods-ReactNativePlatziVideoApp-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +147,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				1EFCAEDBF78ECA9BB8E7CF4B /* libPods-ReactNativePlatziVideoApp.a */,
+				849CFA85FA3252810E4AAEEE /* libPods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.a */,
+				F62E1CB8578766739B04D3AB /* libPods-ReactNativePlatziVideoApp-tvOS.a */,
+				34A59924106593660D7AF87C /* libPods-ReactNativePlatziVideoApp-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,11 +165,15 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				7596DEAB2445666A003AAFD2 /* fa-brands-400.ttf */,
+				7596DEA924456669003AAFD2 /* fa-regular-400.ttf */,
+				7596DEAA2445666A003AAFD2 /* fa-solid-900.ttf */,
 				13B07FAE1A68108700A75B9A /* ReactNativePlatziVideoApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativePlatziVideoAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				B1D7F93B71A12A4DC455394E /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -157,6 +191,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B1D7F93B71A12A4DC455394E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA46F4583C3B68A27BBD29A3 /* Pods-ReactNativePlatziVideoApp.debug.xcconfig */,
+				1CE0E0BFF3CE47FC1B42E48D /* Pods-ReactNativePlatziVideoApp.release.xcconfig */,
+				E8468BCAA6EDA5517F3F9A96 /* Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.debug.xcconfig */,
+				C02052E34B9D7EAC744C1955 /* Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.release.xcconfig */,
+				00FA7F77E549E62169D87453 /* Pods-ReactNativePlatziVideoApp-tvOS.debug.xcconfig */,
+				25EA00C42A4A1FBD1D7CA1B4 /* Pods-ReactNativePlatziVideoApp-tvOS.release.xcconfig */,
+				71F3625F786256BAD0566D7C /* Pods-ReactNativePlatziVideoApp-tvOSTests.debug.xcconfig */,
+				8CE8A679E6B760F565A87532 /* Pods-ReactNativePlatziVideoApp-tvOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativePlatziVideoAppTests" */;
 			buildPhases = (
+				D288EB41D3D6837FB6B20138 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -182,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativePlatziVideoApp" */;
 			buildPhases = (
+				D92AEBEB88DCFE20A7EB06E3 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -201,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativePlatziVideoApp-tvOS" */;
 			buildPhases = (
+				AF3679B1EFF08EBD990072BC /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -220,6 +272,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativePlatziVideoApp-tvOSTests" */;
 			buildPhases = (
+				46E771F7DC34B20766809935 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -293,8 +346,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7596DEAC2445666A003AAFD2 /* fa-regular-400.ttf in Resources */,
+				7596DEAD2445666A003AAFD2 /* fa-solid-900.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				7596DEAE2445666A003AAFD2 /* fa-brands-400.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +399,94 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		46E771F7DC34B20766809935 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativePlatziVideoApp-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF3679B1EFF08EBD990072BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativePlatziVideoApp-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D288EB41D3D6837FB6B20138 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D92AEBEB88DCFE20A7EB06E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativePlatziVideoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -449,6 +593,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8468BCAA6EDA5517F3F9A96 /* Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -471,6 +616,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C02052E34B9D7EAC744C1955 /* Pods-ReactNativePlatziVideoApp-ReactNativePlatziVideoAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -490,6 +636,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA46F4583C3B68A27BBD29A3 /* Pods-ReactNativePlatziVideoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -516,6 +663,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE0E0BFF3CE47FC1B42E48D /* Pods-ReactNativePlatziVideoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -536,6 +684,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00FA7F77E549E62169D87453 /* Pods-ReactNativePlatziVideoApp-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -563,6 +712,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25EA00C42A4A1FBD1D7CA1B4 /* Pods-ReactNativePlatziVideoApp-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -590,6 +740,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71F3625F786256BAD0566D7C /* Pods-ReactNativePlatziVideoApp-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -616,6 +767,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CE8A679E6B760F565A87532 /* Pods-ReactNativePlatziVideoApp-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
