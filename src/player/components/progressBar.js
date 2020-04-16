@@ -19,7 +19,7 @@ const ProgressBar = props => {
             borderRightColor: 'black',
             width: (currentTime * 270) / duration,
             height: 16,
-            backgroundColor:'#8AC73A',
+            backgroundColor: '#8AC73A',
           }}
         />
       </View>

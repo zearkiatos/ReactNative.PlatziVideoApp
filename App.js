@@ -27,8 +27,7 @@ export default class App extends Component<Props> {
       <Home>
         <Header />
         <Player />
-        <Text>Buscador</Text>
-        <Text>Categorías</Text>
+        {/* <Text>Buscador</Text> */}
         <CategoryList list={this.state.categoryList} />
         <SuggestionList list={this.state.suggestionList} />
       </Home>
