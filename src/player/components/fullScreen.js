@@ -1,16 +1,6 @@
 import React from 'react';
-import {
-  TouchableHighlight,
-  TouchableOpacity,
-  TouchableWithoutFeedback,
-  StyleSheet,
-  Text,
-} from 'react-native';
-import FontAwesome, {
-  SolidIcons,
-  RegularIcons,
-  BrandIcons,
-} from 'react-native-fontawesome';
+import {TouchableHighlight, StyleSheet} from 'react-native';
+import FontAwesome, {SolidIcons} from 'react-native-fontawesome';
 
 const FullScreen = props => {
   return (
@@ -24,10 +14,10 @@ const FullScreen = props => {
         bottom: 5,
         right: 5,
       }}>
-      {props.paused ? (
-        <FontAwesome style={styles.button} icon={SolidIcons.play} />
+      {props.fullScreen ? (
+        <FontAwesome style={styles.button} icon={SolidIcons.compress} />
       ) : (
-        <FontAwesome style={styles.button} icon={SolidIcons.pause} />
+        <FontAwesome style={styles.button} icon={SolidIcons.expand} />
       )}
     </TouchableHighlight>
   );
@@ -42,6 +32,7 @@ const styles = StyleSheet.create({
     height: 25,
     marginRight: 10,
     marginVertical: 5,
+    paddingLeft: 30,
   },
 });
 export default FullScreen;
