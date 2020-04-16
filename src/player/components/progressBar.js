@@ -1,10 +1,5 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import FontAwesome, {
-  SolidIcons,
-  RegularIcons,
-  BrandIcons,
-} from 'react-native-fontawesome';
 
 const ProgressBar = props => {
   const {time, duration, currentTime} = props;
@@ -17,7 +12,7 @@ const ProgressBar = props => {
             marginRight: 5,
             borderRightWidth: 5,
             borderRightColor: 'black',
-            width: (currentTime * 270) / duration,
+            width: (currentTime * 270) / duration || 0,
             height: 16,
             backgroundColor: '#8AC73A',
           }}
