@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
+import {Text} from 'react-native';
 import {Provider} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
 import Home from './src/screens/containers/home';
 import Header from './src/sections/components/header';
 import SuggestionList from './src/videos/containers/suggestionList';
 import CategoryList from './src/videos/containers/cagetoryList';
 import Api from './src/services/api';
 import Player from './src/player/containers/player';
-import store from './src/redux/store';
+import {store, persistor} from './src/redux/store';
 type Props = {};
 export default class App extends Component<Props> {
   state = {
@@ -34,12 +36,14 @@ export default class App extends Component<Props> {
   render() {
     return (
       <Provider store={store}>
-        <Home>
-          <Header />
-          <Player />
-          <CategoryList />
-          <SuggestionList />
-        </Home>
+        <PersistGate loading={<Text>Cargando...</Text>} persistor={persistor}>
+          <Home>
+            <Header />
+            <Player />
+            <CategoryList />
+            <SuggestionList />
+          </Home>
+        </PersistGate>
       </Provider>
     );
   }
