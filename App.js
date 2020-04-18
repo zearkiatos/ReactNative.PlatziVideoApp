@@ -10,17 +10,25 @@ import store from './src/redux/store';
 type Props = {};
 export default class App extends Component<Props> {
   state = {
-    suggestionList: [],
-    categoryList: [],
+    // suggestionList: [],
+    // categoryList: [],
   };
   async componentDidMount() {
-    const movies = await Api.getSuggestion(10);
-    const categories = await Api.getMovies();
-    console.log(movies);
-    console.log(categories);
-    this.setState({
-      suggestionList: movies,
-      categoryList: categories,
+    const categoryList = await Api.getMovies();
+
+    store.dispatch({
+      type: 'SET_CATEGORY_LIST',
+      payload: {
+        categoryList,
+      },
+    });
+
+    const suggestionList = await Api.getSuggestion(10);
+    store.dispatch({
+      type: 'SET_SUGGESTION_LIST',
+      payload: {
+        suggestionList,
+      },
     });
   }
   render() {
@@ -29,8 +37,8 @@ export default class App extends Component<Props> {
         <Home>
           <Header />
           <Player />
-          <CategoryList list={this.state.categoryList} />
-          <SuggestionList list={this.state.suggestionList} />
+          <CategoryList />
+          <SuggestionList />
         </Home>
       </Provider>
     );
