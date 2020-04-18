@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import {Text} from 'react-native';
+import {Provider} from 'react-redux';
 import Home from './src/screens/containers/home';
 import Header from './src/sections/components/header';
 import SuggestionList from './src/videos/containers/suggestionList';
 import CategoryList from './src/videos/containers/cagetoryList';
 import Api from './src/services/api';
 import Player from './src/player/containers/player';
+import store from './src/redux/store';
 type Props = {};
 export default class App extends Component<Props> {
   state = {
@@ -24,12 +25,14 @@ export default class App extends Component<Props> {
   }
   render() {
     return (
-      <Home>
-        <Header />
-        <Player />
-        <CategoryList list={this.state.categoryList} />
-        <SuggestionList list={this.state.suggestionList} />
-      </Home>
+      <Provider store={store}>
+        <Home>
+          <Header />
+          <Player />
+          <CategoryList list={this.state.categoryList} />
+          <SuggestionList list={this.state.suggestionList} />
+        </Home>
+      </Provider>
     );
   }
 }
