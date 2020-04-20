@@ -9,6 +9,7 @@ import CategoryList from './src/videos/containers/cagetoryList';
 import Api from './src/services/api';
 import Player from './src/player/containers/player';
 import {store, persistor} from './src/redux/store';
+import Loading from './src/sections/components/loading';
 type Props = {};
 export default class App extends Component<Props> {
   state = {
@@ -36,7 +37,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <Provider store={store}>
-        <PersistGate loading={<Text>Cargando...</Text>} persistor={persistor}>
+        <PersistGate loading={<Loading />} persistor={persistor}>
           <Home>
             <Header />
             <Player />
