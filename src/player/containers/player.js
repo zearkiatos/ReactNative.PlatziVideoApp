@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, ActivityIndicator, Text} from 'react-native';
+import {StyleSheet, ActivityIndicator} from 'react-native';
 import Video from 'react-native-video';
 import Layout from '../components/layout';
 import ControlLayout from '../components/controlLayout';

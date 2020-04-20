@@ -22,7 +22,7 @@ class SuggestionList extends Component {
       <Suggestion
         {...item}
         onPress={() => {
-          this.viewMovie();
+          this.viewMovie(item);
         }}
       />
     );
