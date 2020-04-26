@@ -2,24 +2,29 @@ import React from 'react';
 import {View, Text, Image, StyleSheet, ScrollView} from 'react-native';
 import {WebView} from 'react-native-webview';
 const Details = props => {
-  const {title, description_full, medium_cover_image, yt_trailer_code} = props;
   const makeHTML = id => {
     return `
     <style>
     iframe {
         position: absolute;
-        left:0,
-        top:0, right:0,bottom,
-        width:100%,
+        left:0;
+        top:0;
+        right:0;
+        bottom: 0;
+        width:100%;
+        height:100%;
     }
     .video {
         position:relative;
         padding-bottom: 56.25%;
     }
     </style>
+    <div class="video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/${id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     `;
   };
+  const {title, description_full, medium_cover_image, yt_trailer_code} = props;
   return (
     <ScrollView>
       <View style={styles.top}>
@@ -40,8 +45,8 @@ const Details = props => {
 const styles = StyleSheet.create({
   container: {},
   trailer: {
-    flexDirection: 'row',
-    marginBottom: 20,
+    height: 200,
+    marginBottom: 10,
   },
   details: {
     flexDirection: 'row',
