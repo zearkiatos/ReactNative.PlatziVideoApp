@@ -6,6 +6,7 @@ import SuggestionList from './videos/containers/suggestionList';
 import CategoryList from './videos/containers/cagetoryList';
 import Movie from './screens/containers/movie';
 import Api from './services/api';
+import Search from './sections/containers/Search';
 class AppLayout extends Component {
   async componentDidMount() {
     const categoryList = await Api.getMovies();
@@ -33,6 +34,7 @@ class AppLayout extends Component {
     return (
       <Home>
         <Header />
+        <Search />
         <CategoryList />
         <SuggestionList />
       </Home>

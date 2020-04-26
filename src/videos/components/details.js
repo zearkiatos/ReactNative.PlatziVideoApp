@@ -9,7 +9,8 @@ const Details = props => {
     iframe {
         position: absolute;
         left:0,
-        top:0, right:0,bottom
+        top:0, right:0,bottom,
+        width:100%,
     }
     .video {
         position:relative;
@@ -41,7 +42,6 @@ const styles = StyleSheet.create({
   trailer: {
     flexDirection: 'row',
     marginBottom: 20,
-    height: 200,
   },
   details: {
     flexDirection: 'row',
