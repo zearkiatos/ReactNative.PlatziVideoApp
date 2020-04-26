@@ -1,23 +1,19 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {Animated} from 'react-native';
 import MovieLayout from '../components/movie';
 import Header from '../../sections/components/header';
 import Player from '../../player/containers/player';
 import Close from '../components/close';
 import Details from '../../videos/components/details';
-import {Animated} from 'react-native';
+import {clearSelectedMovie} from '../../redux/actions/videoActions';
 
 class Movie extends Component {
   state = {
     opacity: new Animated.Value(0),
   };
   closeVideo = () => {
-    this.props.dispatch({
-      type: 'SET_SELECTED_MOVIE',
-      payload: {
-        movie: null,
-      },
-    });
+    clearSelectedMovie();
   };
   componentDidMount() {
     Animated.timing(this.state.opacity, {toValue: 1, duration: 1000}).start();
@@ -48,4 +44,11 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(Movie);
+const mapDispatchToProps = {
+  clearSelectedMovie,
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Movie);
