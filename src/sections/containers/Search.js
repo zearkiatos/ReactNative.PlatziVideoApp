@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import {TextInput, StyleSheet} from 'react-native';
-import API from '../../services/api';
 import {connect} from 'react-redux';
+import * as videoActions from '../../redux/actions/videoActions';
+import SkeletonLoading from '../components/skeletonLoading';
+import Error from '../components/Error';
+const {setSelectedMovieByText} = videoActions;
 
 class Search extends Component {
   state = {
@@ -9,21 +12,25 @@ class Search extends Component {
   };
   handleSubmit = async () => {
     const {text} = this.state;
-    const movies = await API.searchMovie(text);
-    this.props.dispatch({
-      type: 'SET_SELECTED_MOVIE',
-      payload: {
-        movie: movies[0],
-      },
-    });
+    await this.props.setSelectedMovieByText(text);
   };
   handleChangeText = text => {
     this.setState({
       text,
     });
   };
-
+  loading = () => {
+    const {loading} = this.props;
+    return loading && <SkeletonLoading isLoading={loading} />;
+  };
+  error = () => {
+    const {error, errorMessage} = this.props;
+    return error && <Error message={errorMessage} />;
+  };
   render() {
+    console.log(this.props);
+    this.loading();
+    this.error();
     return (
       <TextInput
         style={styles.input}
@@ -45,4 +52,17 @@ const styles = StyleSheet.create({
     borderColor: '#eaeaea',
   },
 });
-export default connect(null)(Search);
+const mapStateToProps = state => {
+  return {
+    loading: state.loading,
+    error: state.error,
+    payload: state.payload,
+  };
+};
+const mapDispatchToProps = {
+  setSelectedMovieByText,
+};
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Search);

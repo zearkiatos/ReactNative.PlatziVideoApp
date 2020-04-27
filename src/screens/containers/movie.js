@@ -6,14 +6,16 @@ import Header from '../../sections/components/header';
 import Player from '../../player/containers/player';
 import Close from '../components/close';
 import Details from '../../videos/components/details';
-import {clearSelectedMovie} from '../../redux/actions/videoActions';
+import * as videoActions from '../../redux/actions/videoActions';
+
+const {clearSelectedMovie} = videoActions;
 
 class Movie extends Component {
   state = {
     opacity: new Animated.Value(0),
   };
   closeVideo = () => {
-    clearSelectedMovie();
+    this.props.clearSelectedMovie();
   };
   componentDidMount() {
     Animated.timing(this.state.opacity, {toValue: 1, duration: 1000}).start();

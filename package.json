@@ -11,14 +11,18 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.9.0",
+    "@unimodules/core": "^5.1.0",
     "react": "16.11.0",
     "react-native": "0.62.0",
     "react-native-fontawesome": "^7.0.0",
+    "react-native-linear-gradient": "2.5.6",
+    "react-native-skeleton-placeholder": "2.0.7",
     "react-native-video": "4.4.5",
     "react-native-webview": "9.2.1",
     "react-redux": "7.2.0",
     "redux": "4.0.5",
-    "redux-persist": "6.0.0"
+    "redux-persist": "6.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",

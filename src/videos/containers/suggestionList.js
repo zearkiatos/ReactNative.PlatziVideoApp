@@ -5,17 +5,14 @@ import Layout from '../components/suggestionListLayout';
 import Empty from '../components/empty';
 import Separator from '../components/verticalSeparator';
 import Suggestion from '../components/suggestion';
+import * as videoActions from '../../redux/actions/videoActions';
+const {setSelectedMovie} = videoActions;
 class SuggestionList extends Component {
   keyExtractor = item => item.id.toString();
   renderEmpty = () => <Empty text="No hay elementos sugeridos ☹" />;
   itemSeparator = () => <Separator />;
-  viewMovie = item => {
-    this.props.dispatch({
-      type: 'SET_SELECTED_MOVIE',
-      payload: {
-        movie: item,
-      },
-    });
+  viewMovie = async item => {
+    this.props.setSelectedMovie(item);
   };
   renderItem = ({item}) => {
     return (
@@ -48,4 +45,11 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(SuggestionList);
+const mapDispatchToProps = {
+  setSelectedMovie,
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(SuggestionList);
