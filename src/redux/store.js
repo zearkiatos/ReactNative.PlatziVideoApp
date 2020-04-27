@@ -1,5 +1,6 @@
-import {createStore} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 import {persistStore, persistReducer} from 'redux-persist';
+import reduxThunk from 'redux-thunk';
 import AsyncStorage from '@react-native-community/async-storage';
 import reducers from './reducers/videoReducers';
 
@@ -11,7 +12,7 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, reducers);
 
-const store = createStore(persistedReducer);
+const store = createStore(persistedReducer, applyMiddleware(reduxThunk));
 
 const persistor = persistStore(store);
 
